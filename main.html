@@ -1,26 +1,49 @@
 <!DOCTYPE html>
+
 <head>
     <link ref="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <html>
-    <body>
-        <button onclick = "LightOn()">Light On</button>
-        <img id="light" src = "images/light_off.gif">
-        <button onclick = "LightOff()">Light Off</button>
-        <hr>
 
-        <button onclick = "ChangeFontSize()">Click to toggle font size</button>
-        <p id="fontsize">Change font size</p>
-        <hr>
+<body>
+    <!--Change Image Source-->
+    <h3>Change Image Source</h3>
+    <button onclick="LightOn()">Light On</button>
+    <img id="light" src="images/light_off.gif">
+    <button onclick="LightOff()">Light Off</button>
+    <hr>
 
-        <button onclick = "HideElement()">Click to toggle visibilty</button>
-        <p id="hide">Hide Elements</p>
-        <hr>
+    <!--Change Font Size-->
+    <button onclick="ChangeFontSize()">Click to toggle font size</button>
+    <p id="fontsize">Sample Element</p>
+    <hr>
 
-        <p>Functions</p>
-        <button onclick="Sum(2,2)">Click to add some numbers</button>
-        <p id="test">2 + 2 = </p>
+    <!--Hide Element-->
+    <button onclick="HideElement()">Click to toggle visibilty</button>
+    <p id="hide">Sample Element</p>
+    <hr>
 
-    </body>
+    <!--Random Function that adds 2 preset numbers and displays the answer-->
+    <h3>Functions</h3>
+    <button onclick="Sum(2,2)">Click to add some preset numbers</button>
+    <p id="test">2 + 2 = </p>
+    <hr>
+
+    <!--Calculator-->
+    <h3>Calculator</h3>
+    <label for="num1">Number 1: </label>
+    <input type="text" id="num1" name="num1"><br><br>
+    
+    <label for="op">Operator: </label>
+    <input type="text" id="op" name="op"><br><br>
+
+    <label for="num2">Number 2: </label>
+    <input type="text" id="num2" name="num2">
+    
+    <p id="answer">Answer: </p>
+    <button onclick="Calculate()">Calculate</button>
+
+</body>
+
 </html>
